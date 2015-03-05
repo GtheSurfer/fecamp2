@@ -117,6 +117,7 @@ main{
 	border:1px solid #ddd;
 	border-radius: 4px;
 	padding: 0 10px;
+	background: #fff;
 }
 .aside h2{
 	font-size: 14px;
@@ -237,6 +238,7 @@ main{
 	}
 	.gnb{
 		margin-bottom: 15px;
+		position: relative;
 	}
 	.gnb>ul{
 		display: block !important;
@@ -273,6 +275,7 @@ main{
 	}
 	.gnb>ul>li.active>ul{
 		display: block;
+		left: 20px;
 	}
 	.gnb ul ul{
 		position: absolute;
@@ -285,11 +288,30 @@ main{
 		color: #666;
 		line-height: 40px;
 	}
+	.body:after{
+		content:"";
+		display: block;
+		clear: both;
+	}
 }
 
 /* Tablet */
 @media (min-width:768px) and (max-width:1024px){
-	
+	.body{
+		padding-right: 200px;
+	}
+	main{
+		float: left;
+		width: 100%;
+	}
+	.lnb,
+	.aside{
+		float: right;
+		box-sizing:border-box;
+		width: 180px;
+	}
+	.lnb{}
+	.aside{}
 }
 
 /* Desktop */
