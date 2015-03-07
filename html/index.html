@@ -118,8 +118,41 @@
 				        </tbody>
 				      </table>
 				    </div>
-				    <h1>나눔고딕 테스트</h1>
-				    <p>동해물과 백두산이 마르고 닳도록</p>
+				    <h1 hidden>나눔고딕 테스트</h1>
+				    <p hidden>동해물과 백두산이 마르고 닳도록</p>
+				    <form>
+				    	<fieldset>
+				    		<legend>회원 가입(필수)</legend>
+				    		<label for="email">이메일</label>
+				    		<input type="email" id="email" required>
+				    		<label for="pw1">비밀번호</label>
+				    		<input type="password" id="pw1" required>
+				    		<label for="pw2">비밀번호 확인</label>
+				    		<input type="password" id="pw2" required>
+				    	</fieldset>
+				    	<fieldset>
+				    		<legend>추가 입력 사항(옵션)</legend>
+				    		<dl>
+				    			<dt>성별</dt>
+				    			<dd>
+				    				<input type="radio" id="male" name="gender">
+				    				<label for="male">남성</label>
+				    				<input type="radio" id="female" name="gender">
+				    				<label for="female">여성</label>
+				    			</dd>
+				    			<dt>취미</dt>
+				    			<dd>
+				    				<input type="checkbox" id="mtb">
+				    				<label for="mtb">산악자전거</label>
+				    				<input type="checkbox" id="football">
+				    				<label for="football">축구</label>
+				    				<input type="checkbox" id="motorcycle">
+				    				<label for="motorcycle">모터사이클</label>
+				    			</dd>
+				    		</dl>
+				    	</fieldset>
+				    	<button type="submit">확인</button>
+				    </form>
 				</article>
 			</main>
 			<nav class="lnb">
