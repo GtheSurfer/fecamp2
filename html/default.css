@@ -26,6 +26,7 @@ input,
 textarea,
 select{
 	font-size: 14px;
+	font-family: sans-serif;
 }
 img,
 video{
@@ -46,6 +47,16 @@ video{
 }
 
 /* All */
+@font-face {
+  font-family: NG;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
 body{
 	background: -webkit-linear-gradient(#ccc,#fff); 
 	background: -moz-linear-gradient(#ccc,#fff); 
@@ -159,6 +170,25 @@ main>article{
 	text-align: center;
 	color: #959595;
 }
+.table-rwd{
+	overflow: auto;
+}
+.table{
+	border-collapse: collapse;
+}
+.table th,
+.table td{
+	border-bottom: 1px solid #ddd;
+	padding: 5px;
+}
+.table thead th{
+	background: #eee;
+	border-top: 2px solid #bbb;
+}
+.table td{
+	vertical-align: top;
+	width: 14%;
+}
 
 /* Mobile */
 .container{
@@ -246,6 +276,13 @@ main>article{
 
 /* Tablet & Desktop */
 @media (min-width:768px){
+	body,
+	table,
+	input,
+	textarea,
+	button{
+		font-family: NG, sans-serif;
+	}
 	.gnb>button{
 		display: none;
 	}
